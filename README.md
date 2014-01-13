@@ -44,14 +44,14 @@ Attr | Description
 ---- | -----------
 type | Type of chart to create. See highchart's documentation.
 chart-options | Optional. A custom chartOptions object, use `highchart.defaultOptions()` to generate the default object.
-data | Recommended but optional. Object that contains the labels and series data used to render the chart. Assign to a `$scope` model, changes to the model will be automatically reflected in the chart. See more info below.
-xaxis-title | Defaults to `''`. Title to use for the x-axis.
-yaxis-title | Defaults to `''`. Title to use for the y-axis.
-height | Defaults to `400`. Height of the chart. Chart expands to fill the width of it's container.
-marker | Defaults to `true`. Display the plot marker.
-legend | Defaults to `true`. Display the legend.
-chart-title | Defaults to `''`. Title to display above the chart. Not recommended; instead use your own markup skills to create a title.
-chart-subtitle | Defaults to `''`. Subtitle to display above the chart. Not recommended; instead use your own markup skills to create a title.
+data | Recommended but optional. Object that contains the labels and series data used to render the chart. Assign to a `$scope` model, changes to the model will be automatically reflected in the chart. See more info below. Overwrites settings from `chart-options`.
+xaxis-title | Defaults to `''`. Title to use for the x-axis. Overwrites settings from `chart-options`.
+yaxis-title | Defaults to `''`. Title to use for the y-axis. Overwrites settings from `chart-options`.
+height | Defaults to `400`. Height of the chart. Chart expands to fill the width of it's container. Overwrites settings from `chart-options`.
+marker | Defaults to `true`. Display the plot marker. Overwrites settings from `chart-options`.
+legend | Defaults to `true`. Display the legend. Overwrites settings from `chart-options`.
+chart-title | Defaults to `''`. Title to display above the chart. Not recommended; instead use your own markup skills to create a title. Overwrites settings from `chart-options`.
+chart-subtitle | Defaults to `''`. Subtitle to display above the chart. Not recommended; instead use your own markup skills to create a title. Overwrites settings from `chart-options`.
 
 
 
