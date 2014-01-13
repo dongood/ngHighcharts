@@ -42,7 +42,7 @@ The directive takes the following attributes
 
 Attr | Description
 ---- | -----------
-type | Type of chart to create. See highchart's documentation.
+type | Type of chart to create. See highchart's documentation. Overwrites settings from `chart-options`.
 chart-options | Optional. A custom chartOptions object, use `highchart.defaultOptions()` to generate the default object.
 data | Recommended but optional. Object that contains the labels and series data used to render the chart. Assign to a `$scope` model, changes to the model will be automatically reflected in the chart. See more info below. Overwrites settings from `chart-options`.
 xaxis-title | Defaults to `''`. Title to use for the x-axis. Overwrites settings from `chart-options`.
