@@ -22,6 +22,22 @@ Add a refernce to ngHighcharts.js (should occur after Angular)
 <script type="text/javascript" src="js/ngHighcharts.js"></script>
 ```
 
+Add ngHighcharts module to your app declaration.
+
+```javascript
+var myApp = angular.module('myApp', ['ngHighcharts']);
+```
+
+Optionally add a reference to the highchart service to your controller.
+
+```javascript
+myApp.controller('defaultController',
+    function ($scope, highchart) {
+    }
+);
+```
+
+
 ##Creating Charts
 
 ngHighcharts exposes a service and a directive.
